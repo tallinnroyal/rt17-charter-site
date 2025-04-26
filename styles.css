@@ -5,18 +5,20 @@ body {
   background: #000;
   color: #d4af37;
 }
-
 .hero {
   background: url('tallinn_background.png') no-repeat center center/cover;
   text-align: center;
   padding: 100px 20px;
 }
-
+.small-hero {
+  background: url('smallhero.jpg') no-repeat center center/cover;
+  text-align: center;
+  padding: 60px 20px;
+}
 .logo {
   width: 100px;
   margin-bottom: 20px;
 }
-
 .button {
   background-color: #d4af37;
   color: black;
@@ -25,38 +27,32 @@ body {
   font-weight: bold;
   border-radius: 5px;
 }
-
 .navbar {
   background: #222;
   display: flex;
   justify-content: space-between;
   padding: 10px 20px;
 }
-
 .nav-container {
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-
 .navbar-links ul {
   list-style: none;
   padding: 0;
   display: flex;
   margin: 0;
 }
-
 .navbar-links li {
   margin: 0 10px;
 }
-
 .navbar-links a {
   color: #d4af37;
   text-decoration: none;
   font-weight: bold;
 }
-
 .toggle-button {
   display: none;
   font-size: 24px;
@@ -65,34 +61,27 @@ body {
   border: none;
   cursor: pointer;
 }
-
 footer {
   text-align: center;
   padding: 20px;
   font-size: 0.8em;
   background: #111;
 }
-
-/* Mobile Styles */
 @media (max-width: 768px) {
   .toggle-button {
     display: block;
   }
-
   .navbar-links {
     display: none;
     width: 100%;
   }
-
   .navbar-links.active {
     display: block;
     text-align: center;
   }
-
   .navbar-links ul {
     flex-direction: column;
   }
-
   .navbar-links li {
     margin: 10px 0;
   }

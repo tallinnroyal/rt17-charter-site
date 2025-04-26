@@ -1,31 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Schedule</title>
-    <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Schedule - RT17 Tallinn Royal Charter</title>
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="small-hero">
-    <div class="header-content">
-        <h1></h1>
-    </div>
+<div class="header-content">
+<h1>Schedule</h1>
+</div>
 </header>
 <nav class="navbar">
-    <div class="nav-links">
-        <a href="index.html">Home</a>
-        <a href="schedule.html">Schedule</a>
-        <a href="accommodation.html">Accommodation</a>
-        <a href="registration.html">Registration</a>
-        <a href="contact.html">Contact</a>
-    </div>
+<div class="nav-container">
+<a href="index.html" class="brand-title">RT17</a>
+<a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">☰</a>
+<div class="navbar-links" id="navbar-links">
+<ul>
+<li><a href="index.html">Home</a></li>
+<li><a href="schedule.html">Schedule</a></li>
+<li><a href="accommodation.html">Accommodation</a></li>
+<li><a href="registration.html">Registration</a></li>
+<li><a href="contact.html">Contact</a></li>
+</ul>
+</div>
+</div>
 </nav>
 <main>
-    <p>Our full event schedule will be published soon. Get ready for an unforgettable weekend in Tallinn filled with celebration, brotherhood, and royal hospitality!</p>
+<p>Our full event schedule will be published soon. Get ready for an unforgettable weekend in Tallinn filled with celebration, brotherhood, and royal hospitality!</p>
 </main>
 <footer>
-    <p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
+<p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
 </footer>
+<script>
+function toggleMenu() { 
+  var menu = document.getElementById('navbar-links'); 
+  menu.classList.toggle('active'); 
+}
+</script>
 </body>
 </html>
