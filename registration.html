@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Registration - RT17 Tallinn Royal Charter</title>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="page-header">
+  <h1>Registration</h1>
+</header>
+<main class="content">
+  <form action="https://formspree.io/f/meogokqq" method="POST" class="registration-form">
+    <input type="text" name="fullname" placeholder="Full Name" required>
+    <input type="text" name="clubname" placeholder="Club Name" required>
+    <input type="text" name="country" placeholder="Country" required>
+    <input type="email" name="email" placeholder="Email Address" required>
+    <input type="text" name="dietary" placeholder="Dietary Restrictions (optional)">
+    <select name="package" required>
+      <option value="">Select Package</option>
+      <option value="full">Full Event - €250</option>
+    </select>
+    <button type="submit">Submit Registration</button>
+  </form>
+
+  <div class="payment-info">
+    <h2>Payment Instructions</h2>
+    <p>After submitting your registration, please transfer <strong>€250</strong> manually to the following bank account:</p>
+    <p><strong>Beneficiary:</strong> Elar Toomsalu<br>
+    <strong>IBAN:</strong> EE947700771011155121<br>
+    <strong>Bank:</strong> LHV Pank</p>
+    <p><em>Please use your full name and club name as the payment reference.</em></p>
+  </div>
+</main>
+
+<nav class="footer-nav">
+  <a href="index.html">Home</a>
+</nav>
+
+<footer>
+  <p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
+</footer>
+</body>
+</html>
