@@ -29,6 +29,21 @@ header.small-hero {
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
+}
+header.small-hero::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(18, 18, 18, 0.5); /* dark overlay */
+    z-index: 1;
+}
+header.small-hero > * {
+    position: relative;
+    z-index: 2;
 }
 .main-logo {
     width: 150px;
