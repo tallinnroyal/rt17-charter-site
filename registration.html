@@ -25,13 +25,39 @@
 <main>
 
 <form action="https://formspree.io/f/meogokqq" method="POST" class="form-elegant">
-<label>Full Name:<input type="text" name="Full Name" required></label>
-<label>Club Name:<input type="text" name="Club Name" required></label>
-<label>Country:<input type="text" name="Country" required></label>
-<label>Email Address:<input type="email" name="email" required></label>
-<label>Dietary Restrictions (optional):<input type="text" name="Dietary Restrictions"></label>
-<label>Other relevant information:<textarea name="Other relevant information"></textarea></label>
-<button type="submit" class="button">Submit Registration</button>
+
+  <div class="form-group">
+    <label for="full-name">Full Name:</label><br>
+    <input type="text" id="full-name" name="Full Name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="club-name">Club Name:</label><br>
+    <input type="text" id="club-name" name="Club Name" required>
+  </div>
+
+  <div class="form-group">
+    <label for="country">Country:</label><br>
+    <input type="text" id="country" name="Country" required>
+  </div>
+
+  <div class="form-group">
+    <label for="email">Email Address:</label><br>
+    <input type="email" id="email" name="email" required>
+  </div>
+
+  <div class="form-group">
+    <label for="dietary">Dietary Restrictions (optional):</label><br>
+    <input type="text" id="dietary" name="Dietary Restrictions">
+  </div>
+
+  <div class="form-group">
+    <label for="other-info">Other Relevant Information:</label><br>
+    <textarea id="other-info" name="Other relevant information"></textarea>
+  </div>
+
+  <button type="submit" class="button">Submit Registration</button>
+
 </form>
 <section class="payment-info">
 <h2>Payment Instructions</h2>
