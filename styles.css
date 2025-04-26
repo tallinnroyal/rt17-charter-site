@@ -1,0 +1,86 @@
+
+body {
+  margin: 0;
+  font-family: 'Playfair Display', serif;
+  background-color: #121212;
+  color: #F8F6F0;
+}
+
+.hero, .page-header {
+  background: url('tallinn_background.png') center/cover no-repeat;
+  background-size: cover;
+  text-align: center;
+  padding: 4rem 1rem;
+}
+
+.logo {
+  width: 120px;
+  margin-bottom: 1rem;
+}
+
+h1 {
+  color: #B89C52;
+  margin-bottom: 0.5rem;
+  font-size: 2rem;
+}
+
+h2 {
+  color: #B89C52;
+  margin-top: 2rem;
+}
+
+p, li, label {
+  font-size: 1.1rem;
+}
+
+.content {
+  padding: 2rem;
+  max-width: 600px;
+  margin: auto;
+}
+
+.timeline li {
+  margin-bottom: 1rem;
+}
+
+.registration-form input, .registration-form select {
+  width: 100%;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+  background-color: transparent;
+  border: 1px solid #B89C52;
+  color: #F8F6F0;
+}
+
+.registration-form button.cta {
+  width: 100%;
+  background-color: #B89C52;
+  color: #121212;
+  padding: 0.8rem;
+  font-weight: bold;
+  border-radius: 6px;
+}
+
+.footer-nav {
+  text-align: center;
+  margin: 2rem 0;
+}
+
+.footer-nav a {
+  color: #B89C52;
+  text-decoration: none;
+  font-weight: bold;
+  margin: 0 0.5rem;
+}
+
+footer {
+  text-align: center;
+  font-size: 0.9rem;
+  color: #777;
+  margin: 1rem 0;
+}
+
+.gold-link {
+  color: #B89C52;
+  text-decoration: none;
+}
