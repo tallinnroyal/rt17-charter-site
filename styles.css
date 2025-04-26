@@ -110,3 +110,30 @@ a {
 a:hover {
     text-decoration: underline;
 }
+.form-elegant {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.form-elegant .form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-elegant label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    color: #F8F6F0;
+}
+
+.form-elegant input,
+.form-elegant textarea {
+    width: 100%;
+    padding: 10px;
+    background: #1d1d1d;
+    border: 1px solid #B89C52;
+    color: #F8F6F0;
+    border-radius: 4px;
+}
