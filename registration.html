@@ -4,55 +4,43 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Registration - RT17 Tallinn Royal Charter</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="small-hero">
-<div class="header-content">
-<h1>Registration</h1>
-</div>
-</header>
-<nav class="navbar">
 <div class="nav-container">
 <a href="index.html" class="brand-title">RT17</a>
 <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">☰</a>
-<div class="navbar-links" id="navbar-links">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="schedule.html">Schedule</a></li>
-<li><a href="accommodation.html">Accommodation</a></li>
-<li><a href="registration.html">Registration</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
 </div>
+<div class="header-content-small">
+<h1>Registration</h1>
 </div>
-</nav>
+</header>
 <main>
-
-<form action="https://formspree.io/f/meogokqq" method="POST" class="form">
+<form action="https://formspree.io/f/meogokqq" method="POST" class="form-elegant">
 <label>Full Name:<input type="text" name="Full Name" required></label>
 <label>Club Name:<input type="text" name="Club Name" required></label>
 <label>Country:<input type="text" name="Country" required></label>
 <label>Email Address:<input type="email" name="email" required></label>
 <label>Dietary Restrictions (optional):<input type="text" name="Dietary Restrictions"></label>
 <label>Other relevant information:<textarea name="Other relevant information"></textarea></label>
-<button type="submit">Submit</button>
+<button type="submit" class="button">Submit Registration</button>
 </form>
-<p>After submitting your registration, please transfer €250 manually to the following bank account:<br>
-Beneficiary: Elar Toomsalu<br>
-IBAN: EE947700771011155121<br>
-Bank: LHV Pank<br><br>
-Please use your full name and club name as the payment reference.</p>
-
+<section class="payment-info">
+<h2>Payment Instructions</h2>
+<p>After submitting your registration, please transfer <strong>€250</strong> manually to:</p>
+<p><strong>Beneficiary:</strong> Elar Toomsalu<br>
+<strong>IBAN:</strong> EE947700771011155121<br>
+<strong>Bank:</strong> LHV Pank</p>
+<p><em>Please use your full name and club name as the payment reference.</em></p>
+</section>
 </main>
 <footer>
 <p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
 </footer>
 <script>
-function toggleMenu() { 
-  var menu = document.getElementById('navbar-links'); 
-  menu.classList.toggle('active'); 
-}
+function toggleMenu() {{ var menu = document.getElementById('navbar-links'); menu.classList.toggle('active'); }}
 </script>
 </body>
 </html>

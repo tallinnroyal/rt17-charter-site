@@ -4,10 +4,15 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>RT17 Tallinn Royal Charter</title>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 <header class="hero">
+<div class="nav-container">
+<a href="index.html" class="brand-title">RT17</a>
+<a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">☰</a>
+</div>
 <div class="header-content">
 <img src="RT_Royal_Logo_GOLD.png" alt="RT17 Logo" class="logo">
 <h1>RT 17 Tallinn Royal Charter</h1>
@@ -15,32 +20,17 @@
 <a href="registration.html" class="button">Register Now</a>
 </div>
 </header>
-<nav class="navbar">
-<div class="nav-container">
-<a href="index.html" class="brand-title">RT17</a>
-<a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">☰</a>
-<div class="navbar-links" id="navbar-links">
-<ul>
-<li><a href="index.html">Home</a></li>
-<li><a href="schedule.html">Schedule</a></li>
-<li><a href="accommodation.html">Accommodation</a></li>
-<li><a href="registration.html">Registration</a></li>
-<li><a href="contact.html">Contact</a></li>
-</ul>
-</div>
-</div>
-</nav>
 <main>
-
+<section class="about">
+<h2>About the Event</h2>
+<p>Welcome to the RT17 Tallinn Royal Charter — a celebration of brotherhood, tradition, and new beginnings in the historic heart of Tallinn. Join us for an unforgettable weekend of camaraderie, elegance, and Round Table spirit.</p>
+</section>
 </main>
 <footer>
 <p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
 </footer>
 <script>
-function toggleMenu() { 
-  var menu = document.getElementById('navbar-links'); 
-  menu.classList.toggle('active'); 
-}
+function toggleMenu() {{ var menu = document.getElementById('navbar-links'); menu.classList.toggle('active'); }}
 </script>
 </body>
 </html>
