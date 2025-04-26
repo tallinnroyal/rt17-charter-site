@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,19 +7,26 @@
 <title>RT17 Tallinn Royal Charter</title>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="RT_Royal_Logo_GOLD.png" type="image/png">
 </head>
 <body>
 <header class="hero">
-<div class="nav-container">
-<a href="index.html" class="brand-title">RT17</a>
-<a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">☰</a>
-</div>
-<div class="header-content">
-<img src="RT_Royal_Logo_GOLD.png" alt="RT17 Logo" class="logo">
-<h1>RT 17 Tallinn Royal Charter</h1>
-<p>19–21 September 2025 · Tallinn, Estonia</p>
-<a href="registration.html" class="button">Register Now</a>
-</div>
+  <div class="nav-container regular-nav">
+    <a href="index.html"><img src="RT_Royal_Logo_GOLD.png" alt="Logo" class="logo-small"></a>
+    <nav class="nav-links-regular">
+      <a href="index.html">Home</a>
+      <a href="schedule.html">Schedule</a>
+      <a href="accommodation.html">Accommodation</a>
+      <a href="registration.html">Registration</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </div>
+  <div class="header-content">
+    <h1>RT17 Tallinn Royal Charter</h1>
+    <p>19–21 September 2025 · Tallinn, Estonia</p>
+    <div id="countdown"></div>
+    <a href="registration.html" class="button">Register Now</a>
+  </div>
 </header>
 <main>
 <section class="about">
@@ -30,14 +38,23 @@
 <p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
 </footer>
 <script>
-<script>
-function toggleMenu() {
-    var menu = document.getElementById('nav-links');
-    menu.classList.toggle('active');
-}
-</script>
+function updateCountdown() {
+  const eventDate = new Date("2025-09-19T00:00:00").getTime();
+  const now = new Date().getTime();
+  const distance = eventDate - now;
 
-function toggleMenu() {{ var menu = document.getElementById('navbar-links'); menu.classList.toggle('active'); }}
+  const days = Math.floor(distance / (1000 * 60 * 60 * 24));
+  const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+  const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
+
+  document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+
+  if (distance < 0) {
+    document.getElementById("countdown").innerHTML = "Event Started!";
+  }
+}
+setInterval(updateCountdown, 1000);
 </script>
 </body>
 </html>
