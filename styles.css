@@ -1,4 +1,3 @@
-
 body {
     margin: 0;
     font-family: 'Merriweather', serif;
@@ -6,15 +5,20 @@ body {
     color: #F8F6F0;
 }
 header.hero {
-    background: url('background.jpg') no-repeat center/cover;
+    background: url('tallinn_background.png') no-repeat center/cover;
     text-align: center;
     padding: 50px 20px;
+}
+header.small-hero {
+    background: url('tallinn_background.png') no-repeat center/cover;
+    text-align: center;
+    padding: 20px 20px;
 }
 header.hero .logo {
     width: 120px;
     margin-bottom: 20px;
 }
-header.hero h1 {
+header.hero h1, header.small-hero h1 {
     font-size: 2.5rem;
     color: #B89C52;
 }
@@ -44,10 +48,22 @@ nav a {
     text-decoration: none;
     font-weight: bold;
 }
+main {
+    padding: 20px;
+    text-align: center;
+}
+form input, form textarea {
+    width: 80%;
+    padding: 10px;
+    margin: 10px 0;
+}
 footer {
     text-align: center;
     padding: 20px;
     font-size: 0.8rem;
     background-color: #1d1d1d;
     color: #aaa;
+}
+a {
+    color: #B89C52;
 }

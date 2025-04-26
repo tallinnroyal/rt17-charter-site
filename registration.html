@@ -1,46 +1,42 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>Registration - RT17 Tallinn Royal Charter</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration - RT17 Tallinn Royal Charter</title>
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-<header class="page-header">
-  <h1>Registration</h1>
+<header class="hero small-hero">
+    <h1>Registration</h1>
 </header>
-<main class="content">
-
-<form action="https://formspree.io/f/meogokqq" method="POST" class="registration-form">
-  <input type="text" name="fullname" placeholder="Full Name" required>
-  <input type="text" name="clubname" placeholder="Club Name" required>
-  <input type="text" name="country" placeholder="Country" required>
-  <input type="email" name="email" placeholder="Email Address" required>
-  <input type="text" name="dietary" placeholder="Dietary Restrictions (optional)">
-  <select name="package" required>
-    <option value="">Select Package</option>
-    <option value="full">Full Event - €250</option>
-  </select>
-  <button type="submit" class="cta">Submit Registration</button>
-</form>
-<section class="payment-info">
-  <h2>Payment Instructions</h2>
-  <p>After submitting your registration, please transfer <strong>€250</strong> manually to:</p>
-  <p><strong>Beneficiary:</strong> Elar Toomsalu<br>
-  <strong>IBAN:</strong> EE947700771011155121<br>
-  <strong>Bank:</strong> LHV Pank</p>
-  <p><em>Please use your full name and club name as the payment reference.</em></p>
-</section>
-
-</main>
-<nav class="footer-nav">
-  <a href="index.html">Home</a>
+<nav>
+    <a href="index.html">Home</a>
+    <a href="schedule.html">Schedule</a>
+    <a href="accommodation.html">Accommodation</a>
+    <a href="registration.html">Registration</a>
+    <a href="contact.html">Contact</a>
 </nav>
+<main>
+    <section>
+        <form>
+            <label for="name">Full Name:</label><br>
+            <input type="text" id="name" name="name"><br><br>
+
+            <label for="email">Email Address:</label><br>
+            <input type="email" id="email" name="email"><br><br>
+
+            <label for="phone">Phone Number:</label><br>
+            <input type="tel" id="phone" name="phone"><br><br>
+
+            <input type="submit" value="Submit">
+        </form>
+        <p>After registration, you will receive a confirmation email with further instructions regarding payment and event details.</p>
+    </section>
+</main>
 <footer>
-  <p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
+    <p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
 </footer>
 </body>
 </html>
