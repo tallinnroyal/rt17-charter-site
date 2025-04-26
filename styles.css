@@ -1,69 +1,99 @@
+
 body {
-    margin: 0;
-    font-family: 'Merriweather', serif;
-    background-color: #121212;
-    color: #F8F6F0;
+  margin: 0;
+  font-family: 'Arial', sans-serif;
+  background: #000;
+  color: #d4af37;
 }
-header.hero {
-    background: url('tallinn_background.png') no-repeat center/cover;
-    text-align: center;
-    padding: 50px 20px;
+
+.hero {
+  background: url('tallinn_background.png') no-repeat center center/cover;
+  text-align: center;
+  padding: 100px 20px;
 }
-header.small-hero {
-    background: url('smallhero.jpg') no-repeat center/cover;
-    text-align: center;
-    padding: 20px 20px;
+
+.logo {
+  width: 100px;
+  margin-bottom: 20px;
 }
-header.hero .logo {
-    width: 120px;
-    margin-bottom: 20px;
-}
-header.hero h1, header.small-hero h1 {
-    font-size: 2.5rem;
-    color: #B89C52;
-}
-header.hero p {
-    font-size: 1.2rem;
-    color: #F8F6F0;
-}
+
 .button {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #B89C52;
-    color: #121212;
-    text-decoration: none;
-    font-weight: bold;
-    border-radius: 5px;
+  background-color: #d4af37;
+  color: black;
+  padding: 10px 20px;
+  text-decoration: none;
+  font-weight: bold;
+  border-radius: 5px;
 }
-nav {
-    background-color: #1d1d1d;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-    padding: 10px;
+
+.navbar {
+  background: #222;
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 20px;
 }
-nav a {
-    color: #B89C52;
-    text-decoration: none;
-    font-weight: bold;
+
+.nav-container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-main {
-    padding: 20px;
-    text-align: center;
+
+.navbar-links ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  margin: 0;
 }
-form input, form textarea {
-    width: 80%;
-    padding: 10px;
-    margin: 10px 0;
+
+.navbar-links li {
+  margin: 0 10px;
 }
+
+.navbar-links a {
+  color: #d4af37;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.toggle-button {
+  display: none;
+  font-size: 24px;
+  color: #d4af37;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
 footer {
-    text-align: center;
-    padding: 20px;
-    font-size: 0.8rem;
-    background-color: #1d1d1d;
-    color: #aaa;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.8em;
+  background: #111;
 }
-a {
-    color: #B89C52;
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  .toggle-button {
+    display: block;
+  }
+
+  .navbar-links {
+    display: none;
+    width: 100%;
+  }
+
+  .navbar-links.active {
+    display: block;
+    text-align: center;
+  }
+
+  .navbar-links ul {
+    flex-direction: column;
+  }
+
+  .navbar-links li {
+    margin: 10px 0;
+  }
 }
