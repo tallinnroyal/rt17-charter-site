@@ -19,40 +19,34 @@ header.hero {
     justify-content: center;
     align-items: center;
 }
-.nav-container {
-    position: absolute;
-    top: 0;
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 20px;
-    background: rgba(18, 18, 18, 0.7);
+.main-logo {
+    width: 150px;
+    margin-bottom: 20px;
 }
 .logo-small {
-    height: 50px;
+    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 20px;
 }
-.nav-links-regular a {
+.nav-centered {
+    display: flex;
+    justify-content: center;
+    background-color: #1d1d1d;
+    padding: 10px 0;
+}
+.nav-centered a {
     color: #B89C52;
-    margin: 0 15px;
+    margin: 0 20px;
     text-decoration: none;
     font-weight: bold;
 }
-.nav-links-regular {
-    display: flex;
-    align-items: center;
-}
 @media (max-width: 768px) {
-    .nav-links-regular {
+    .nav-centered {
         flex-direction: column;
-        background: #1d1d1d;
-        position: absolute;
-        top: 60px;
-        right: 20px;
-        padding: 10px;
-        border: 1px solid #B89C52;
+        text-align: center;
     }
-    .nav-links-regular a {
+    .nav-centered a {
         margin: 10px 0;
     }
 }
