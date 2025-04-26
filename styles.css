@@ -35,7 +35,7 @@ header.small-hero {
     margin-bottom: 20px;
 }
 .logo-small {
-    height: 60px;
+    height: 75px;
     position: absolute;
     top: 20px;
     left: 20px;
@@ -85,6 +85,6 @@ footer {
 #countdown {
   color: #B89C52;
   font-weight: 300;
-  font-size: 1.8rem;
-  margin-top: 20px;
+  font-size: 1.2rem;
+  margin-top: 15px;
 }
