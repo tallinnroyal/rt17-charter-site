@@ -10,7 +10,7 @@ header.hero {
     padding: 50px 20px;
 }
 header.small-hero {
-    background: url('tallinn_background.png') no-repeat center/cover;
+    background: url('smallhero.jpg') no-repeat center/cover;
     text-align: center;
     padding: 20px 20px;
 }
