@@ -8,9 +8,26 @@
 <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
 <header class="small-hero">
 <div class="nav-container">
-<a href="index.html" <img src="RT_Royal_Logo_GOLD.png" alt="Logo" class="logo-small"></a>
+<a href="index.html"><img src="RT_Royal_Logo_GOLD.png" alt="Logo" class="logo-small"></a>
+<button onclick="document.getElementById('nav-links').classList.toggle('show')">☰</button>
+<div class="nav-links" id="nav-links">
+  <a href="index.html">Home</a>
+  <a href="schedule.html">Schedule</a>
+  <a href="accommodation.html">Accommodation</a>
+  <a href="registration.html">Registration</a>
+  <a href="contact.html">Contact</a>
+</div>
+</div>
+<div class="header-content-small">
+<h1>Contact</h1>
+</div>
+</header>
+
+<div class="nav-container">
+<a href="index.html" class="brand-title">RT17</a>
 <a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">☰</a>
 </div>
 <div class="header-content-small">
@@ -27,6 +44,8 @@
 <p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
 </footer>
 <script>
+function toggleMenu() { var menu = document.getElementById("nav-links"); menu.classList.toggle("show"); }
+
 function toggleMenu() {{ var menu = document.getElementById('navbar-links'); menu.classList.toggle('active'); }}
 </script>
 </body>
