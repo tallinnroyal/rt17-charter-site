@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -6,35 +7,24 @@
 <title>Registration - RT17 Tallinn Royal Charter</title>
 <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300;700&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="RT_Royal_Logo_GOLD.png" type="image/png">
 </head>
 <body>
-
 <header class="small-hero">
-<div class="nav-container">
-<a href="index.html"><img src="RT_Royal_Logo_GOLD.png" alt="Logo" class="logo-small"></a>
-<button class="toggle-button" onclick="toggleMenu()">☰</button>
-<div class="nav-links" id="nav-links">
+  <a href="index.html"><img src="RT_Royal_Logo_GOLD.png" alt="Logo" class="logo-small"></a>
+  <div class="header-content-small">
+    <h1>Registration</h1>
+  </div>
+</header>
+<nav class="nav-centered">
   <a href="index.html">Home</a>
   <a href="schedule.html">Schedule</a>
   <a href="accommodation.html">Accommodation</a>
   <a href="registration.html">Registration</a>
   <a href="contact.html">Contact</a>
-</div>
-</div>
-<div class="header-content-small">
-<h1>Registration</h1>
-</div>
-</header>
-
-<div class="nav-container">
-<a href="index.html" class="brand-title">RT17</a>
-<a href="javascript:void(0);" class="toggle-button" onclick="toggleMenu()">☰</a>
-</div>
-<div class="header-content-small">
-<h1>Registration</h1>
-</div>
-</header>
+</nav>
 <main>
+
 <form action="https://formspree.io/f/meogokqq" method="POST" class="form-elegant">
 <label>Full Name:<input type="text" name="Full Name" required></label>
 <label>Club Name:<input type="text" name="Club Name" required></label>
@@ -52,19 +42,10 @@
 <strong>Bank:</strong> LHV Pank</p>
 <p><em>Please use your full name and club name as the payment reference.</em></p>
 </section>
+
 </main>
 <footer>
 <p>© 2025 RT17 Tallinn Royal. All rights reserved.</p>
 </footer>
-<script>
-<script>
-function toggleMenu() {
-    var menu = document.getElementById('nav-links');
-    menu.classList.toggle('active');
-}
-</script>
-
-function toggleMenu() {{ var menu = document.getElementById('navbar-links'); menu.classList.toggle('active'); }}
-</script>
 </body>
 </html>
