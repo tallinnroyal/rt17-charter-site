@@ -43,15 +43,16 @@ function updateCountdown() {
   const days = Math.floor(distance / (1000 * 60 * 60 * 24));
   const hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
   const minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-  const seconds = Math.floor((distance % (1000 * 60)) / 1000);
 
-  document.getElementById("countdown").innerHTML = `${days}d ${hours}h ${minutes}m ${seconds}s`;
+  document.getElementById("countdown").innerHTML = 
+    `<h2>${days}d ${hours}h ${minutes}m</h2>`;
 
   if (distance < 0) {
-    document.getElementById("countdown").innerHTML = "Event Started!";
+    document.getElementById("countdown").innerHTML = "<h2>Event Started!</h2>";
   }
 }
-setInterval(updateCountdown, 1000);
+
+setInterval(updateCountdown, 60000); // Update every minute
 </script>
 </body>
 </html>
