@@ -1,11 +1,53 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
-body { font-family: 'Playfair Display', serif; background-color: #121212; color: #F8F6F0; line-height: 1.6; }
-header { text-align: center; padding: 2rem 1rem; background: #121212 url('tallinn_background.png') center/cover no-repeat; }
-.hero-logo { max-width: 120px; margin-bottom: 1rem; }
-.hero h1 { font-size: 2.5rem; color: #B89C52; }
-.hero p { margin-top: 0.5rem; }
-.hero-button { margin-top: 1rem; background: #B89C52; color: #121212; padding: 0.75rem 1.5rem; text-decoration: none; border-radius: 5px; display: inline-block; }
-.nav { background-color: #1E1E1E; text-align: center; padding: 1rem; }
-.nav a { color: #B89C52; text-decoration: none; margin: 0 1rem; font-weight: bold; }
-.footer { text-align: center; padding: 1rem; font-size: 0.9rem; background-color: #1E1E1E; color: #aaa; }
-@media (max-width: 768px) { .hero h1 { font-size: 2rem; } .nav { display: flex; flex-direction: column; gap: 0.5rem; } }
+
+body {
+    margin: 0;
+    font-family: 'Merriweather', serif;
+    background-color: #121212;
+    color: #F8F6F0;
+}
+header.hero {
+    background: url('background.jpg') no-repeat center/cover;
+    text-align: center;
+    padding: 50px 20px;
+}
+header.hero .logo {
+    width: 120px;
+    margin-bottom: 20px;
+}
+header.hero h1 {
+    font-size: 2.5rem;
+    color: #B89C52;
+}
+header.hero p {
+    font-size: 1.2rem;
+    color: #F8F6F0;
+}
+.button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #B89C52;
+    color: #121212;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+}
+nav {
+    background-color: #1d1d1d;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    padding: 10px;
+}
+nav a {
+    color: #B89C52;
+    text-decoration: none;
+    font-weight: bold;
+}
+footer {
+    text-align: center;
+    padding: 20px;
+    font-size: 0.8rem;
+    background-color: #1d1d1d;
+    color: #aaa;
+}
