@@ -83,7 +83,8 @@ footer {
     display: inline-block;
 }
 #countdown {
-    margin-top: 20px;
-    font-size: 1.5rem;
-    color: #B89C52;
+  color: #B89C52;
+  font-weight: 300;
+  font-size: 1.8rem;
+  margin-top: 20px;
 }
