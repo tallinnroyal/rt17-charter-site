@@ -50,10 +50,11 @@ header.small-hero > * {
     margin-bottom: 20px;
 }
 .logo-small {
-    height: 65px;
+    height: 95px;
     position: absolute;
     top: 20px;
     left: 20px;
+    z-index:10;
 }
 .nav-centered {
     display: flex;
@@ -99,7 +100,7 @@ footer {
 }
 #countdown {
   color: #B89C52;
-  font-weight: 150;
+  font-weight: 200;
   font-size: 0.5rem;
   margin-top: 20px;
 }
@@ -117,7 +118,7 @@ a:hover {
 }
 
 .form-elegant .form-group {
-    margin-bottom: 20px;
+    margin-bottom: 25px;
     text-align: left;
 }
 
