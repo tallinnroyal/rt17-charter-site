@@ -9,25 +9,28 @@ h1, h2 {
     color: #B89C52;
 }
 header.hero {
-    background: url('tallinn_background.png') no-repeat center center/cover;
-    padding: 150px 20px 100px 20px;
+    background: url('image.png') no-repeat center center/cover;
+    height: 90vh;
+    min-height: 600px;
     text-align: center;
-}
-header.small-hero {
-    background: url('smallhero.jpg') no-repeat center center/cover;
-    padding: 80px 20px;
-    text-align: center;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 .nav-container {
+    position: absolute;
+    top: 0;
+    width: 100%;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 10px 20px;
+    background: rgba(18, 18, 18, 0.7);
 }
-.brand-title {
-    font-size: 1.5rem;
-    color: #B89C52;
-    text-decoration: none;
+.logo-small {
+    height: 50px;
 }
 .toggle-button {
     font-size: 2rem;
@@ -35,6 +38,24 @@ header.small-hero {
     background: none;
     border: none;
     cursor: pointer;
+}
+.nav-links {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 60px;
+    right: 20px;
+    background-color: #1d1d1d;
+    border: 1px solid #B89C52;
+    padding: 10px;
+}
+.nav-links a {
+    color: #F8F6F0;
+    text-decoration: none;
+    padding: 10px;
+}
+.nav-links.active {
+    display: flex;
 }
 main {
     padding: 40px 20px;
@@ -57,29 +78,8 @@ footer {
     margin-top: 20px;
     display: inline-block;
 }
-.form-elegant input, .form-elegant textarea {
-    width: 90%;
-    max-width: 500px;
-    margin: 10px 0;
-    padding: 10px;
-    background: #1d1d1d;
-    border: 1px solid #B89C52;
-    color: #F8F6F0;
-}
-.form-elegant button {
+#countdown {
     margin-top: 20px;
-}
-.payment-info {
-    margin-top: 40px;
-}
-.about {
-    margin-top: 40px;
-}
-a {
+    font-size: 1.5rem;
     color: #B89C52;
-}
-@media (max-width: 768px) {
-    .toggle-button {
-        display: block;
-    }
 }
